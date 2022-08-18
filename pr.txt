@@ -1,0 +1,29 @@
+// introduction:
+
+	my project is proctored examination system which will help industries and colleges to take exams through online mode and students will be able to give exam from their home.
+	my project is based on client server model and it is using python flask framework to serve the request from the client.
+	I am using tensorflow,numpy,matplotlib and scikit-image libs to create my deep learning neural network model
+
+	so, here images of the user will be taken after certain intervals from their webcams and it will be sent to the backend application server from further processing.
+	the backend server has already preloaded the saved model and it is predicting if the human is present in the image or not and accordingly sending response to the client or warnings.
+
+
+
+// model creation
+	** image size = 250 x 250
+	first I am importing all the required libs for neural network model. the dataset i have used is uploaded to my google drive and i am importing it also. the dataset contains two categories of image which involves human and non-human photos.
+	then i am using ImageDataGenerator for rotating, zooming, flipping the image for increasing accuracy
+
+	the model is created using CNN classification, activation function here used is softmax, and the output layer consists of two layers.
+	
+	model is trained for 10 epochs with batch size 200
+	
+	finally saving the model (extension:'.h5')for loading and reusing.
+
+
+
+	
+
+
+
+
